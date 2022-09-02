@@ -5,7 +5,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Y+ Global Academy</title>
+        <title>Y + Global</title>
 
         <!-- start: Favicon-->
         <link rel="shortcut icon" href="images/icon1.png">
@@ -20,10 +20,16 @@
         <!-- Bootstrap Font Icon CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--==========Link Swiper's CSS===========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
         <!-- Custom CSS -->
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/form.css" rel="stylesheet">
     </head>
-    <body>
+    <body id="body">
         <!-- header Section-->
         <div class="container-fluid-fill">
             <!-- header -->
@@ -35,7 +41,7 @@
                             <div class="col-sm-12">
                                 <ul class="nav top-links justify-content-center">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="login.html">Authorize</a>
+                                        <a class="nav-link" href="login.html">Login</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="btn btn-info nav-link" href="#">Create account</a>
@@ -65,7 +71,8 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container">
                         <a class="navbar-brand mb-0" href="index.html">
-                            <img src="images/logo.gif" alt="" width="160" height="50" class="d-inline-block"> 
+                            <img src="images/logo.gif" alt="" width="140" height="60">
+                            <img src="images/ready.png" alt="" width="90" height="60" class="d-inline-block"> 
                             Academy
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -98,7 +105,7 @@
         </div>
 
         <!-- Image slider -->
-        <div class="container-fluid-fill">
+        <div class="container-fluid-fill mb-5">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -136,19 +143,376 @@
         </div>
 
         <!-- Introduction Section -->
-        <div class="container mt-4">
-            <div class="introduction text-center">
-                <h2>Y+ Global <span>Academy</span></h2>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="section-title">
+                        <h4>BRIEF INFO ABOUT</h4>
+                        <h2>Our Academy</h2>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <p class="sec-paragraph">
+                        The READY Academy provide a programme of skills development and learning for cohorts 
+                        of young people living with HIV in the READY + countries. The focus of the 
+                        Academy is to invest not only in the tools and programme activities but in 
+                        young advocates themselves.
+                        <q><span style="color: #000;">We see the READY Academy as an opportunity to train 
+                            and support a cohort of young advocates over the life of the READY + 2 project 
+                            as well as to develop and more widely a range of online training and resources 
+                            to other young people from countries outside of the READY+ programme.</span></q>
+                    </p>
+                </div>
             </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="container mt-5 mb-5">
+            <div class="vision" style="width:100%; margin:auto;">
+                <div class="row  g-0">
+                    <div class="col-sm-6 col-sm-6 col-xs-12">
+                        <img src="images/goal.jpg" class="p-10 img-fluid" alt="...">
+                    </div>
+                    <div class="col-sm-6 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="card-header">READY ACADEMY</div>
+                            <div class="card-body">
+                                <h3>Goal</h3>
+                                <p>
+                                    Create an adaptive, inclusive, diverse, issue-focused, and accessible learning 
+                                    institution for young leaders across the world.
+                                </p>
+                            </div>
+                            <!--<div class="card-footer text-muted">2 days ago</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-sm-6 col-sm-6 col-xs-12">
+                        <div class="card ">
+                            <div class="card-header">READY ACADEMY</div>
+                            <div class="card-body">
+                                <h3>Outcomes</h3>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        
+                                        Young leaders strengthened their capacity and 
+                                        are able to utilize the skills and the network to influence change.
+
+                                        <span class="badge bg-info rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        A strong and inclusive youth movement is created through the Academy.
+
+                                        <span class="badge bg-info rounded-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        An evolving and self-sustained institutions continue to provide learning opportunity
+                                        to young leaders.
+
+                                        <span class="badge bg-info rounded-pill">3</span>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <!--<div class="card-footer text-muted">2 days ago</div>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6 col-xs-12">
+                        <img src="images/outcomes.jpg" class="p-10 img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses Section -->
+        <div class="container-fluid-fill courses mt-5 mb-5">
+            <div class="section-title">
+                <h3 class="text-center">A glance at courses offered</h3>
+            </div>      
+            <ul class="courses_list">
+                <li>
+                    <div class="hover top d-flex align-items-center justify-content-center">
+                        <div class="course-info">
+                            <hr class="divider">
+                            <h4>Public <br> Speaking</h4>
+                            <hr class="divider">
+                            <p>Course 001</p>
+                        </div>
+                        <div class="overlay first d-flex align-items-start justify-content-start">
+                            <div class="more-info">
+                                <h5><span>Course 001</span> <br> Public Speaking</h5>
+                                <p class="sec-paragraph">
+                                    An evolving and self-sustained institutions continue to provide learning 
+                                    opportunity to young leaders....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>   
+                <li>
+                    <div class="hover top d-flex align-items-center justify-content-center">
+                        <div class="course-info">
+                            <hr class="divider">
+                            <h4>Communication <br> Mastery</h4>
+                            <hr class="divider">
+                            <p>Course 222</p>
+                        </div>
+                        <div class="overlay second d-flex align-items-start justify-content-start">
+                            <div class="more-info">
+                                <h5><span>Course 222</span> <br> Communication Mastery</h5>
+                                <p class="sec-paragraph">
+                                    An evolving and self-sustained institutions continue to provide learning 
+                                    opportunity to young leaders....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>   
+                <li>
+                    <div class="hover top d-flex align-items-center justify-content-center">
+                        <div class="course-info">
+                            <hr class="divider">
+                            <h4>Presentation <br> Skills</h4>
+                            <hr class="divider">
+                            <p>Course 021</p>
+                        </div>
+                        <div class="overlay third d-flex align-items-start justify-content-start">
+                            <div class="more-info">
+                                <h5><span>Course 021</span> <br> Presentation Skills</h5>
+                                <p class="sec-paragraph">
+                                    An evolving and self-sustained institutions continue to provide learning 
+                                    opportunity to young leaders....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>   
+                <li>
+                    <div class="hover top d-flex align-items-center justify-content-center">
+                        <div class="course-info">
+                            <hr class="divider">
+                            <h4>Public <br> Speaking</h4>
+                            <hr class="divider">
+                            <p>Course 001</p>
+                        </div>
+                        <div class="overlay fourth d-flex align-items-start justify-content-start">
+                            <div class="more-info">
+                                <h5><span>Course 001</span> <br> Public Speaking</h5>
+                                <p class="sec-paragraph">
+                                    An evolving and self-sustained institutions continue to provide learning 
+                                    opportunity to young leaders....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hover d-flex align-items-center justify-content-center">
+                        <div class="course-info">
+                            <hr class="divider">
+                            <h4>Public <br> Speaking</h4>
+                            <hr class="divider">
+                            <p>Course 001</p>
+                        </div>
+                        <div class="overlay d-flex align-items-start justify-content-start">
+                            <div class="more-info">
+                                <h5><span>Course 001</span> <br> Public Speaking</h5>
+                                <p class="sec-paragraph">
+                                    An evolving and self-sustained institutions continue to provide learning 
+                                    opportunity to young leaders....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>   
+            </ul>
+        </div>
+
+        <!-- Courses Section -->
+        <div class="container-fluid-fill mb-5">
+            <div class="content d-flex align-items-center justify-content-start">
+                <div class="content-info">
+                    <div class="section-title">
+                        <h4>AT READY ACADEMY</h4>
+                        <h2>We provide opportunities for training.</h2>
+                    </div>
+                    <p>
+                        READY Academy is an opportunity to train and support a cohort of young advocates 
+                        over the life of the READY + 2 project as well as to develop and offer more widely 
+                        a range of online training and resources to other young people from countries outside 
+                        of the READY+ programme. Every 2 years, the READY ACADEMY will train 70 young people 
+                        from the 7 READY countries, with a maximum of 10 young people per country for 2 years.
+                    </p> 
+
+                    <a class ="btn more" href="">Learn More</a>
+                </div>
+              </div>
+        </div>
+
+        <!-- Activities Section -->
+        <div class="container-fluid-fill">
+            <div class="featured-news">
+                <div class="news-content invert">
+                    <div class="section-title">
+                        <h4>Main Activities</h4>
+                        <h2>What's Happening At READY Academy.</h2>
+                    </div>
+
+                    <div class="news-post">
+                        <div class="post">
+                            <div class="image" style="background-image: url('/images/activity.jpg');"></div>
+                            <h6 class="date">6 Academy Modules</h6>
+                            <h5 class="title">Module development and partnerships.</h5>
+                            <div class="body">
+                                <p>
+                                    Each of the 6 modules will be developed specifically for the READY Academy. 
+                                    The development processes will....
+                                </p>
+
+                                <div class="read-more">
+                                    <a href="#">Read More 
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="post">
+                            <div class="image" style="background-image: url('/images/activity1.jpg');"></div>
+                            <h6 class="date">2 Year Period</h6>
+                            <h5 class="title">Regional training (every 2 years).</h5>
+                            <div class="body">
+                                <p>
+                                    Advocates would be selected and attend a regional training in one of the 
+                                    READY+ countries every 2 years. It is anticipated....
+                                </p>
+
+                                <div class="read-more">
+                                    <a href="#">Read More 
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="image" style="background-image: url('/images/public1.jpg');"></div>
+                            <h6 class="date">6 Months Avocacy Work</h6>
+                            <h5 class="title">National level training (6 Months).</h5>
+                            <div class="body">
+                                <p>
+                                    This will be a continuation of the regional training for 6 months focused 
+                                    on applied advocacy....
+                                </p>
+
+                                <div class="read-more">
+                                    <a href="#">Read More 
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="post">
+                            <div class="image" style="background-image: url('/images/slide01.jpg');"></div>
+                            <h6 class="date">Advocacy Strategy</h6>
+                            <h5 class="title">Advocacy at country, regional and global level</h5>
+                            <div class="body">
+                                <p>
+                                    After the training each cohort will develop an advocacy strategy with
+                                    support from the national YPLHIV....
+                                </p>
+
+                                <div class="read-more">
+                                    <a href="#">Read More 
+                                        <span class="fa fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section class="page-footer">
+            <div class="top-page" >
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/ready_academy.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-5">
+                        <h4>READY Academy School</h4>
+                        <p>
+                            <a href="">
+                                Eerste Helmersstraat 17 B3 | 1054 CX Amsterdam | The Netherlands
+                            </a><br>
+                            <a href="">
+                                32 Kloof Street Gardens | Cape Town | South Africa
+                            </a><br>
+                            <a href="tel:314234114" title="Call us today!"> +31 (20) 423 4114 </a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Stay Connected</h4>
+                        <div class="widget-content">
+                            <ul class="social-icon-one">
+                                <li><a href="https://www.facebook.com/YplusGlobal" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="https://twitter.com/Yplus_Global" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="https://www.instagram.com/yplus_global/?hl=en" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCj0XgQL4SBfCbYFcRUy3Oyg" target="_blank"><span class="fa fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-page">
+                <div class="row">
+                    <div class="col-sm-6 d-flex p-2 bd-highlight">
+                        Copyright © 2022 Y+ Global. All rights reserved.
+                    </div>
+                    <div class="col-sm-6 d-flex p-2 bd-highlight justify-content-end">
+                        Read Our <a href="#"> Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid-fill pager-footer" >
+            
         </div>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
             crossorigin="anonymous">
         </script>
 
-        <script src="js/bootstrap.bundle.min.js">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                slidesPerGroup: 4,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
         </script>
 
     </body>
